@@ -1,3 +1,57 @@
+/*Enunciado
+
+Digamos que um texto é um vetor de bytes, todos com valor entre 32 e 126. (Cada um desses bytes representa um caractere ASCII.)
+
+Digamos que uma palavra é um segmento maximal de texto que consiste apenas de letras.
+
+Escreva uma função que receba um texto e imprima uma relação de todas as palavras que ocorrem no texto juntamente com o número de ocorrências de cada palavra.
+
+Use uma lista encadeada para armazenar as palavras.
+
+ Dicas
+
+Observe se a entrada não é um texto vazio.
+
+Desconsidere acentuações.
+
+Considere todos as letras como sendo maiúsculas ou minúsculas.
+
+Considere que o texto digital não tenha ocorrência de numerais.
+
+Uma palavra é definida no espaço por estar:
+
+1) No início da frase, seguida de um espaço em branco
+
+2) No meio da frase, antecedida e suscedida de espaços em branco
+
+3) No final da frase, antecedida de um espaço em branco; podendo ser precedida de uma pontuação (:,.-?!)
+
+
+Exemplos de Entrada e Saída
+
+ Entrada
+
+a aranha arranha a ra a ra arranha a aranha nem a aranha arranha a ra nem a ra arranha a aranha
+
+ Saída
+
+a (8)
+aranha (4)
+arranha (4)
+ra (4)
+nem (2)
+Total de palavras: 5
+Maior incidencia: a - 8 vezes
+
+ Entrada
+
+.
+
+Saída
+
+Total de palavras: 0*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -86,7 +140,7 @@ void maiorIncidencia(TLista *l) {
     int num = 0;
 
     while (aux) {
-        if (aux->ocorre > num) {
+        if (aux->ocorre >= num) {
             num = aux->ocorre;
             maior = aux;
         }
