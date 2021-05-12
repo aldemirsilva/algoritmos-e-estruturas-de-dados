@@ -1,4 +1,4 @@
-# Códigos estudados e desenvolvidos na disciplina AED 2
+# Códigos estudados na disciplina AED 2
 
 ## Tipos de dado
 * Em linguagens de programação o tipo de dado de uma variável, constante ou função define o conjunto de valores que a variável, constante ou função podem assumir.
