@@ -1,16 +1,7 @@
 # Códigos estudados na disciplina AED 2
 
-## Tipos de dado
-* Em linguagens de programação o tipo de dado de uma variável, constante ou função define o conjunto de valores que a variável, constante ou função podem assumir.
-* p.ex., variável boolean pode assumir valores true
-ou false.
-* Programador pode definir novos tipos de dados em termos de outros já definidos.
-* Tipos estruturados, p.ex., arrays, record.
-
-
-## Estruturas de dados (tipos estruturados de dados)
-* Um tipo estruturado é um exemplo de estrutura de 
-dados
-* Tipos estruturados são estruturas de dados já pré-definidas na linguagem de programação.
-* O programador pode definir outras estruturas de dados para armazenar as informações que seu programa precisa manipular.
-* Vetores, registros, listas encadeadas, pilhas, filas, árvores, grafos, são exemplos de estruturas de dados típicas utilizadas para armazenar informação em memória principal.
+## Tipos de Dados e Tipos Abstratos de Dados
+* Em linguagens de programação é importante classificar constantes, variáveis, expressões e funções de acordo com certas características, as quais indicam o seu tipo de dados. Este tipo deve caracterizar o conjunto de valores a que uma constante pertence, ou que podem ser assumidos por uma variável ou expressão, ou que podem ser gerados por uma função (Wirth, 1976, pp.4–40).
+* Tipos simples de dados são grupos de valores indivisíveis, como os tipos básicos integer, boolean, char, e real do Pascal. Por exemplo, uma variável do tipo boolean pode assumir ou o valor verdadeiro ou o valor falso, e nenhum outro valor. Os tipos estruturados em geral definem uma coleção de valores simples, ou um agregado de valores de tipos diferentes.
+* Um tipo abstrato de dados pode ser visto como um modelo matemático, acompanhado das operações definidas sobre o modelo. 0 conjunto dos inteiros acompanhado das operações de adição, subtração e multiplicação forma um exemplo de um tipo abstrato de dados. Aho, Hoperoft e Ullman (1983), utilizam extensivamente tipos abstratos de dados como base para o projeto de algoritmos. Nestes casos a implementação do algoritmo em uma linguagem de programação específica exige que se encontre alguma forma de representar o tipo abstrato de dados, em termos dos tipos de dados e dos operadores suportados pela linguagem considerada. A representação do modelo matemático por trás do tipo abstrato de dados é realizada através de uma estrutura de dados.
+* Tipos abstratos de dados podem ser considerados generalizações de tipos primitivos de dados, da mesma forma que procedimentos são generalizações de operações primitivas tais como adição, subtração e multiplicação. Da mesma forma que um procedimento é usado para encapsular partes de um algoritmo, o tipo abstrato de dados pode ser usado para encapsular tipos de dados. Neste caso a definição do tipo e todas as operações definidas sabre ele podem ser localizadas em uma única seção do programa.
